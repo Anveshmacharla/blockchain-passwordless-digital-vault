@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+coverage/
+
+# Runtime logs
+*.log
+logs/
+
+# Encrypted vault data — never commit actual stored files
+storage/vaults/*
+!storage/vaults/.gitkeep
+
+# Blockchain deployment artifacts that may contain environment-specific data
+blockchain/cache/
+blockchain/artifacts/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local environment files
+*.local
