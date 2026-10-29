@@ -1,34 +1,60 @@
 # Blockchain-Based Passwordless Digital Vault for Secure Data Storage
 
-Single integrated project for:
+A secure digital vault application that combines passwordless authentication, encrypted file storage, access control, and blockchain-based file integrity verification.
+
+## Project Overview
+
+This is a single integrated project developed for two academic subjects:
+
 - Blockchain
 - Backend Web Development
 
-## Implementation Order
+## Technology Stack
 
-1. Project structure
-2. React frontend initialization
-3. Node.js + Express backend initialization
-4. MongoDB + Mongoose configuration
-5. Seven Mongoose models
-6. Middleware/security
-7. WebAuthn registration/login
-8. JWT cookie authentication
-9. RBAC + permissions
-10. Vault
-11. AES-256-GCM + DEK/KEK
-12. Encrypted filesystem storage
-13. SHA-256 integrity
-14. Solidity contract
-15. Sepolia deployment
-16. ethers.js + Alchemy
-17. Blockchain verification
-18. Audit + security alerts
-19. React integration
-20. Full integration testing
+- **Frontend:** React.js, TypeScript, Vite
+- **Backend:** Node.js, Express.js, TypeScript
+- **Database:** MongoDB with Mongoose
+- **Authentication:** WebAuthn passwordless authentication
+- **Authorization:** Role-Based Access Control (RBAC)
+- **Encryption:** AES-256-GCM with Data Encryption Key (DEK) and Key Encryption Key (KEK)
+- **Integrity Verification:** SHA-256
+- **Blockchain:** Solidity smart contract and ethers.js
+- **File Storage:** Encrypted files stored off-chain
 
-## Current Status
+## Project Structure
 
-Step 1 — Project structure: COMPLETE
+```text
+blockchain-passwordless-digital-vault/
+├── blockchain/       # Smart contract and Hardhat configuration
+├── client/           # React frontend
+├── server/           # Express backend and application services
+├── storage/          # Local encrypted file storage
+├── docs/             # Architecture and implementation documentation
+├── tests/            # Integration test directory
+├── .gitignore
+└── README.md
+```
 
-No frontend UI, authentication implementation, database models, blockchain contract, or alternative architecture is initialized at this stage.
+## Core Features
+
+- Passwordless authentication using WebAuthn
+- JWT-based session authentication using cookies
+- Vault and file management
+- Role-based authorization and file permissions
+- AES-256-GCM file encryption
+- Secure off-chain storage of encrypted files
+- SHA-256 file integrity verification
+- Blockchain-based integrity record management
+- Audit logging and security alerts
+
+## Implementation Status
+
+The initial project structure and core implementation files have been added to the repository. The frontend, backend, blockchain, documentation, and test directories are present.
+
+**Note:** The presence of source files does not by itself confirm that every feature is fully integrated or tested. Refer to `docs/IMPLEMENTATION_STATUS.md` for the current implementation and testing status.
+
+## Academic Project
+
+**Project Title:** Blockchain-Based Passwordless Digital Vault for Secure Data Storage
+
+This project uses blockchain as an integrity and trust layer while encrypted files remain in off-chain storage.
